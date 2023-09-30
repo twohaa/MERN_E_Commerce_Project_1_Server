@@ -1,4 +1,4 @@
-# E-commerce MERN-Stack project
+# E-commerce MERN-Stack project (server side)
 
 /test -> health check (d)
 
@@ -19,12 +19,10 @@ PUT - Admin /unban/:id (d) -> unban the user
 GET - Admin /export-users (d) -> export all the users
 GET - Admin /all-users -> get all users including search
 
-
 --> api/auth (JWT Auth)
 -> POST /login -> isLoggesOut -> user login (d)
 -> POST /logout -> isLoggesIn -> user logout (d)
 -> GET /refresh -> get refresh token (d)
-
 
 --> Middileware
 isLoggesIn (d)
@@ -35,7 +33,6 @@ getRefreshToken (d)
 userValidation (d)
 runValidation (d)
 
-
 --> /api/categories (CRUD)
 POST / -> create a category (Admin)
 GET / -> get all the categories (Admin)
@@ -43,7 +40,6 @@ GET /:id -> get single category (Admin)
 POST / -> create a category (Admin)
 DELETE /:id -> delete a category (Admin)
 PUT /:id -> Update a category (Admin)
-
 
 --> /api/products (CRUD)
 POST / -> create a product (Admin)
@@ -53,7 +49,6 @@ POST / -> create a product (Admin)
 DELETE /:id -> delete product (Admin)
 PUT /:id -> Update a product (Admin)
 
-
 --> /api/orders (CRUD)
 POST / -> create a order (Admin)
 GET / -> get all the orders (Admin)
@@ -62,23 +57,17 @@ POST / -> create a order (Admin)
 DELETE /:id -> delete order (Admin)
 PUT /:id -> Update a order (Admin)
 
-
---> api/payment 
+--> api/payment
 GET /token -> get the payment token (User/Admin)
 Post /process-payment -> process the payment (User/Admin)
-
-
 
 --> packages
 npm install express cors http-errors multer body-parser bcrypt jsonwebtoken nodemailer cookie-parser
 npm install --save-dev morgan nodemon
 
-
 --> smpt(google app)
-smtp username : mahfuzztwohaa@gmail.com
-smpt password : pohyyvmzybjcbrmm
-
-
+<!-- smtp username : mahfuzztwohaa@gmail.com -->
+<!-- smpt password : pohyyvmzybjcbrmm -->
 
 1.Course plan
 2.environment setup
@@ -138,11 +127,3 @@ smpt password : pohyyvmzybjcbrmm
 56.Product CRUD - Update product -> Put: api/products/:slug
 57.Product CRUD - Delete product -> Delete: api/products/:slug
 58.Search product -> GET: api/products/
-59.
-60.
-
-
-
-
-
-
